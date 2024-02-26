@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 132, 132);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 18.75rem 18.75rem;
+}
+
+.first {
+    grid-column: 1 /3;
+    padding: 3.125rem;
+    background-color: #fff;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.first h1 {
+    font-size: 1.5rem;
+    color: #11b1b1;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.first h2 {
+    color: #a1bb1c;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.first p {
+    max-width: 450px;
+    color: rgb(164, 150, 150);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+
+/* second */
+
+.second {
+    padding: 30px 20px;
+    background-color: #2BB3B1;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.second h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.second span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+.second .dr {
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+    color: rgb(191, 221, 230);
+}
+
+.dolar {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+.second p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.second a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #BFDF32;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+/* third */
+
+.third {
+    background-color: #4ABEBD;
+    padding: 30px;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.third h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.third p {
+    max-width: 190px;
+    font-size: 0.8rem;
+    color: rgb(200, 213, 227);
+}
+
+
+/* Mobole */
+
+@media (max-width:375px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        margin-top: 50px;
+        padding: 50px 20px;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+
+    .first h1 {
+        font-size: 2rem;
+    }
+
+    .first h2 {
+        font-size: 1.5rem;
+    }
+
+    .first p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+
+
+    .third {
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+}
